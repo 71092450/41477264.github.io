@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./../css/style.css"/>
     <link rel="stylesheet" href="./../css/style-peliculas.css" />
     <link rel="stylesheet" href="./../css/boots-peliculas.min.css" />
-    <script src="./../js/boot-peliculas.min.js"></script>
+
   </head>
   <body>
     <!--INICIO DE CABECERA-->
@@ -24,7 +24,9 @@
                   <li><a href="../vistas/Lugares.html">CINES</a></li>
                   <li><a href="../vistas/vistas-promociones.html">DULCERIA/PROMOCIONES</a></li>
                   <li><a href="../vistas/contacto.html">CONTACTO</a></li>
-                  <li><a href="../vistas/login.html">LOGIN</a></li>
+                  <li id="vista_login"><a href="./login.html">LOGIN</a></li>
+                  <li id="vista_cerrarsesion"><a href="#" onclick="cerrarSesion()">LOGOUT</a></li>
+                  <li style="background: none; border: none"><span id="usuario_sesion"></span></li>
               </ul>
           </nav>
       </div>
@@ -1890,5 +1892,8 @@ allowTransparency="true"
         </div>
       </div>
     </div>
+    
+    <script src="./../js/boot-peliculas.min.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
